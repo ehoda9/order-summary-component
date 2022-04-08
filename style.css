@@ -1,0 +1,123 @@
+/* Start Global Rules */
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Pale-blue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 0 -110px;
+}
+
+/* End Global Rules */
+a {
+    color: var(--Bright-blue)
+}
+
+.order {
+    background-color: var(--Very-pale-blue);
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 2px #8080804f;
+}
+
+.order__data {
+    text-align: center;
+    padding: 2rem;
+}
+
+.order_title {
+    padding-bottom: 1rem;
+    color: var(--Dark-blue);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+.order_desc {
+    font-weight: 500;
+    padding-bottom: 2rem;
+    color: gray;
+}
+
+.order_plan {
+    display: flex;
+
+}
+
+.order_img {
+    height: 2.5rem;
+    margin-right: 1.5rem;
+    padding-left: 1rem;
+}
+
+.order_price {
+    font-weight: 900;
+    color: var(--Dark-blue);
+    margin-right: 5.5rem;
+}
+
+.order_price>span {
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+    line-height: 2;
+}
+a:hover{
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--Desaturated-blue);;
+}
+
+.order_actions {
+    padding: 3rem;
+}
+
+.order_btn {
+    background-color: var(--Bright-blue);
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    box-shadow: 0px 10px 10px 1px #00000066;
+    margin-bottom: 1.5rem;
+    transition: 0.3s;
+}
+
+.order_btn:hover {
+    background-color: var(--Desaturated-blue);
+    cursor: pointer;
+}
+
+.order_cancel {
+    text-align: center;
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+}
+
+.order_cancel:hover {
+    cursor: pointer;
+    transition: 0.3s;
+    color: var(--Dark-blue);
+}
